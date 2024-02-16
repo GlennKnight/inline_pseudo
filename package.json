@@ -11,7 +11,7 @@
   },
   "keywords": ["styling", "inline", "inline pseudo", "CSS", "HTML"],
   "author": "Glenn Knight",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GlennKnight/inline_pseudo/issues"
   },
