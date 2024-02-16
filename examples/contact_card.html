@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    <style>
+        @keyframes horizontal-shaking {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(2px)
+            }
+
+            50% {
+                transform: translateX(-2px)
+            }
+
+            75% {
+                transform: translateX(2px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw; margin: 0; font-family: system-ui; background-color: #f0f4f9">
+    <script src="../dist/inline_pseudo.min.js"></script>
+    <div style="padding: 2rem; border-radius: 1rem; width: 300px; background-color: white;"
+        style:focus-within="box-shadow: gray 0px 0px 32px -12px; transition: all 200ms ease-out;">
+        <img src="avatar_one.jpg" alt="Avatar" style="width: 4rem; height: 4rem; border-radius: 50%;">
+        <h2>Jane Doe</h2>
+        <p>I'm a web developer who loves designing and building things for the web.</p>
+        <form onsubmit="submitForm()" oninput="validateForm()" style="display: flex; flex-direction: column; gap: 1rem;">
+            <input required aria-label="Ask me anything" placeholder="Ask me anything" 
+            style="padding: 0.5rem;border-radius: 0.5rem; border: solid 2px rgba(0, 0, 0, 0.1); outline-color: transparent; transition: all 200ms ease-out;"
+                style:focus-visible="border-color: #d0bcff;"/>
+            <button type="submit"
+                style="display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem;border-radius: 0.5rem; text-decoration: none;
+            color: black; background-color: #fff; width: 64px; border: none; outline-color: transparent; transition: all 200ms ease-out;"
+                style:hover="background-color: #d0bcff;"
+                style:focus-visible="outline-offset: 3px; outline-color: #d0bcff; background-color: #d0bcff;"
+                style:active="background-color: #6d1aff; outline-color: #6d1aff; color: white"
+                style:disabled="background-color: rgba(0, 0, 0, 0.1); color: rgba(0, 0, 0, 0.5)"
+                style:disabled:hover="animation: horizontal-shaking 0.15s 1;">Ask</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        const button = document.querySelector('button');
+        const input = document.querySelector('input');
+        function validateForm() {
+            button.disabled = form.matches(':invalid');
+        }
+        function submitForm() {
+            input.value = '';
+            validateForm();
+        }
+        validateForm();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "inline_pseudo",
+  "description": "A micro-library that allows pseudo classes to be styled inline",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "google-closure-compiler --js src\\inline_pseudo.js --js_output_file dist\\inline_pseudo.min.js --compilation_level ADVANCED"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GlennKnight/inline_pseudo.git"
+  },
+  "keywords": ["styling", "inline", "inline pseudo", "CSS", "HTML"],
+  "author": "Glenn Knight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GlennKnight/inline_pseudo/issues"
+  },
+  "homepage": "https://github.com/GlennKnight/inline_pseudo",
+  "devDependencies": {
+    "google-closure-compiler": "^20230802.0.0"
+  }
+}
