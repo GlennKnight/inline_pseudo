@@ -65,7 +65,7 @@ This creates an optimized `dist/inline_pseudo.min.js` file.
 
 **License:**
 
-This library is licensed under the ISC License (see LICENSE file for details).
+This library is licensed under the MIT License (see LICENSE file for details).
 
 **Contributions:**
 
