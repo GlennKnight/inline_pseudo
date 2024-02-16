@@ -1,5 +1,3 @@
-# inline_pseudo: Experimenting with Inline Pseudo-Class Styling
-
 A lightweight JavaScript library that lets you explore styling pseudo-classes directly within your element's attributes, providing an intuitive and experimental approach to CSS customisation.
 
 Ever imagined styling an element's hover state inline, without juggling external stylesheets? `inline_pseudo` is a playful experiment that explores this concept, allowing you to define pseudo-class styles directly within your elements' attributes. It's designed for exploration and learning, not necessarily for production environments.
@@ -10,6 +8,10 @@ Ever imagined styling an element's hover state inline, without juggling external
 - **Modifier Stacking:** Combine multiple pseudo-class styles within the same `style` attribute using semicolons as separators.
 - **Conciseness:** Simplify styling by eliminating the need for external stylesheets for basic pseudo-class customization.
 - **Exploration:** Experiment with inline pseudo-classes for rapid prototyping and learning.
+
+**Examples:**
+
+- [Contact card](/examples/contact_card.html) - A simple contact card with an AMA form.
 
 **Disclaimer:**
 
